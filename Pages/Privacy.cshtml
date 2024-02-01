@@ -1,0 +1,34 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Личный кабинет";
+}
+
+<p style="color:white; position:absolute; left: 250px">
+    Имя пользователя
+</p>
+
+@if (Model.nameEdit)
+{
+        <input style="position:absolute; left: 250px" type="text" value="Имя пользователя"/>
+}
+else
+{
+    <p style="color:white; position:absolute; left: 250px">Имя пользователя</p>
+}
+
+<p style="color:white; position:absolute; left: 1000px; top: 150px">
+    <input type="text" value="Описание"/>
+</p>
+<form method="post">
+    <button type="button" class="btn btn-secondary" style="position:absolute; top: 300px" asp-page-handler="EditName">Редактировать профиль</button>
+</form>
+
+<img 
+    src="https://www.shutterstock.com/image-vector/default-avatar-profile-icon-vector-600nw-1745180411.jpg" 
+    alt="Аватар пользователя" 
+    style="position:absolute; top:130px; left:250px" 
+    width="150" 
+    height="150" 
+/>
+

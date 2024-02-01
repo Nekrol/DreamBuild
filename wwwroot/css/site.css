@@ -1,0 +1,51 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.backround-gradient {
+    background: rgb(20,21,22) !important;
+    background: linear-gradient(90deg, rgba(20,21,22,1) 0%, rgba(82,82,82,1) 100%, rgba(0,212,255,1) 100%) !important;
+}
+
+.hero-card {
+    width: 225px;
+    height: 127px;
+    transition: all .3s ease-out;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin: 0 10px 10px 0;
+}
+
+.card-text {
+    text-align: center;
+    padding-top: 43%;
+    color:darkgray;
+}
+
+.hero-card .card-text {
+    opacity: 0;
+    transition: all .3s ease-out;
+}
+    .hero-card:hover .card-text{
+        opacity: 1;
+    }    
+    
+    .hero-card:hover{
+        transform: scale(1.1);
+    }

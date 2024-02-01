@@ -1,0 +1,78 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class = "main">
+    <div class="attribute-block">
+        <div class="attribute-title">
+            <h3 class="display-3" style="color:aliceblue; text-align:center;">Сила</h3>
+        </div>
+        <hr style="color: red;" size="10" noshade/>
+       <div class="grid-cards">
+            <div class="container">
+                <div class="row row-cols-4">
+                    @for (int i = 0; i < 25; i++)
+                    {
+                                <div class=" col hero-card" style="background: url(https://minio.nplus1.ru/app-images/178182/60d7b371c9ad2a17c302b00d4d5a74b8.jpg); left: calc(244px + 0%); top: calc(142px);">
+                                    <p class="card-text"><b>Morphling</b></p>
+                                </div>                       
+                    }
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="attribute-block">
+        <div clss="attribute-title">
+            <h3 class="display-3" style="color:aliceblue; text-align:center;">Ловкость</h3>
+        </div>
+        <hr style="color: green;" size="10"/>
+        <div class="grid-cards">
+            <div class="container">
+                <div class="row row-cols-4">
+                    @for (int i = 0; i < 25; i++)
+                    {
+                                <div class=" col hero-card" style="background: url(https://minio.nplus1.ru/app-images/178182/60d7b371c9ad2a17c302b00d4d5a74b8.jpg); left: calc(244px + 0%); top: calc(142px);">
+                                    <p class="card-text"><b>Morphling</b></p>
+                                </div>                       
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="attribute-block">
+        <div class="attribute-title">
+            <h3 class="display-3" style="color:aliceblue; text-align:center;">Интелект</h3>
+        </div>
+        <hr style="color: blue;" size="10"/>
+        <div class="grid-cards">
+            <div class="container">
+                <div class="row row-cols-4">
+                    @for (int i = 0; i < 25; i++)
+                    {
+                                <div class=" col hero-card" style="background: url(https://minio.nplus1.ru/app-images/178182/60d7b371c9ad2a17c302b00d4d5a74b8.jpg); left: calc(244px + 0%); top: calc(142px);">
+                                    <p class="card-text"><b>Morphling</b></p>
+                                </div>                       
+                    }
+                </div>
+            </div>
+    </div>
+    <div class="attribute-block">
+        <div class="attribute-title">
+            <h3 class="display-3" style="color:aliceblue; text-align:center;">Универсальность</h3>
+        </div>
+        <hr style="background-image: linear-gradient(90deg, rgba(245,4,4,1) 27%, rgba(5,255,0,1) 70%, rgba(0,142,255,1) 100%);" size="10"/>
+        <div class="grid-cards">
+            <div class="container">
+                <div class="row row-cols-4">
+                    @for(int i=0; i<25; i++)
+                    {
+                            <div class=" col hero-card" style="background: url(https://minio.nplus1.ru/app-images/178182/60d7b371c9ad2a17c302b00d4d5a74b8.jpg); left: calc(244px + 0%); top: calc(142px);">
+                                <p class="card-text"><b>Morphling</b></p>
+                            </div>                       
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
