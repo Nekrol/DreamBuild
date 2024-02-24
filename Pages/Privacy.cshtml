@@ -4,31 +4,37 @@
     ViewData["Title"] = "Личный кабинет";
 }
 
-<p style="color:white; position:absolute; left: 250px">
-    Имя пользователя
-</p>
+<div class="parent">
+    <div class="div1"> 
+        <form method="post">
+            @if (Model.nameEdit)
+            {
+                <input name="name" style="position:absolute; left: 250px" type="text" />
+            }
+            else
+            {
+                <p style="color:white; position:absolute; left: 250px">@Model.Name</p>
+            }
+            <input type="submit" value="Редактировать профиль" class="btn btn-secondary" style="position:absolute; top: 300px" />
+        </form>
 
-@if (Model.nameEdit)
-{
-        <input style="position:absolute; left: 250px" type="text" value="Имя пользователя"/>
-}
-else
-{
-    <p style="color:white; position:absolute; left: 250px">Имя пользователя</p>
-}
+        <img src="https://www.shutterstock.com/image-vector/default-avatar-profile-icon-vector-600nw-1745180411.jpg"
+             alt="Аватар пользователя"
+             style="position:absolute; top:130px; left:250px"
+             width="150"
+             height="150" />
 
-<p style="color:white; position:absolute; left: 1000px; top: 150px">
-    <input type="text" value="Описание"/>
-</p>
-<form method="post">
-    <button type="button" class="btn btn-secondary" style="position:absolute; top: 300px" asp-page-handler="EditName">Редактировать профиль</button>
-</form>
+    </div>
+    
+    <div class="div2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+        </svg>
+    
+    </div>
+    <div class="div3">
+        
+    </div>
 
-<img 
-    src="https://www.shutterstock.com/image-vector/default-avatar-profile-icon-vector-600nw-1745180411.jpg" 
-    alt="Аватар пользователя" 
-    style="position:absolute; top:130px; left:250px" 
-    width="150" 
-    height="150" 
-/>
+</div>
 

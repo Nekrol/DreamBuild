@@ -35,7 +35,7 @@ body {
 .card-text {
     text-align: center;
     padding-top: 43%;
-    color:darkgray;
+    color:whitesmoke;
 }
 
 .hero-card .card-text {
@@ -49,3 +49,39 @@ body {
     .hero-card:hover{
         transform: scale(1.1);
     }
+
+.hero-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+    .hero-page .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .hero-page .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+.div3 {
+    grid-area: 2 / 2 / 3 / 4;
+}

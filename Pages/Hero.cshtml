@@ -1,0 +1,32 @@
+﻿@page
+@model DreamBuild.Pages.HeroModel
+@{
+}
+<div class="container text-center">
+    <div class="row justify-content-md-center" style="padding-bottom: 50px;">
+        <div class="col col-lg-2">
+            
+        </div>
+        <div class="col-md-auto">
+            <h2 style="color: whitesmoke;">@Model.Hero.Name</h2>
+        </div>
+        <div class="col col-lg-2">
+            
+        </div>
+    </div>
+    <div class="hero-page">
+        <div class="div1">
+            @foreach (var ability in Model.Hero.Abilities)
+            {
+                <div class="col-3 p-3 mb-2" style="width: 100% !important; color:white;">
+                    <h6>@ability.name_loc</h6><br /><p><i>@ability.desc_loc</i></p>
+                </div>
+            }
+        </div>
+        <div class="div2">
+            <p style="background-color: lightgray; border-radius: 5px;">@Model.Hero.Description</p>
+        </div>
+    </div>
+</div>
+
+

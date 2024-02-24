@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamBuild", "DreamBuild.csproj", "{AA780721-95FB-4908-B22F-DF955A251B5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DreamBuild", "DreamBuild.csproj", "{AA780721-95FB-4908-B22F-DF955A251B5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
